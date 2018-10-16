@@ -38,6 +38,8 @@ Tensorflow implementation of "[Recurrent Convolutional Neural Network for Text C
 	--pos_dir "data/rt-polaritydata/rt-polarity.pos" \
 	--neg_dir "data/rt-polaritydata/rt-polarity.neg"\
 	--word2vec "GoogleNews-vectors-negative300.bin"
+	
+	$ python train.py --cell_type "lstm" --max_sentence_length 120 --word2vec "/home/len/GoogleNews-vectors-negative300.bin" --batch_size 40 --checkpoint_every 2000 --display_every 100 | tee H04_8topic_rcnn.log
 	```
 
 
